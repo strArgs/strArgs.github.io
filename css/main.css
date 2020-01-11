@@ -1,53 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  background-image:linear-gradient(rgba(255,255,255,.0), rgba(255,255,255,.5)), url('/img/asphalt-dark-dawn-endless-531321.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: cover;
-  
-}
-
-/*navigation*/
-#navbar {
-  background: #1B3540;
-  color: #fff;
-  overflow: hidden;
-  width: 100%;
-}
-
-#navbar ul{
-  list-style: none;
-  float:left;
-  
-}
-#navbar ul li{
-  float: left;
-}
-
-#navbar ul li a{
-  color: white;
-  display: block;
-  padding: 17px;
-  text-align: center;
-  text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-#navbar ul li a:hover{
-  
-  color: #3D6373;
-}
 
 /*Heading content*/
 
 #header {
   background: url('/img/daylight-environment-forest-idyllic-459225.jpg') no-repeat center center/cover;
-  height: 600px;;
+  height: 650px;
 }
 
 #header-content h1{
@@ -78,25 +34,14 @@ body{
 }
 
 
-#main{
-  height: 100%;
-  width: 100%;
+/* Utillity */
+#in-p{
+  display:inline;
 }
 
-/*biography*/
-
-.biography{
-  padding: 100px 15px;
+.bgc-light {
+  background: #f4f4f4;
+  color: #333;
 }
 
-.biography img{
-  border-radius: 1%;
-}
 
- #bio{
-   float:right;
-   color: #fff;
-   text-align: center;
-   font-size: 23px;
-   padding-top: 30px;
- }
