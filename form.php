@@ -1,17 +1,18 @@
 <?php
 
 $name = $_POST["firstname"];
-$surname = $_POST["lastname"];
+$lastname = $_POST["lastname"];
 $email = $_POST["email"];
-$message = $_POST["message"];
+$message_1 = $_POST["message"];
 
 
-
-$conn = new mysqli('localhost', 'root', '', 'form');
+  
+$conn = new mysqli('localhost', 'root', '', 'project_1');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$q = "INSERT INTO `form_1` (`firstname`, `surname`, `email`, `message`) VALUES ('$name', '$surname', '$email', '$message');";
+$q = "INSERT INTO form (firstname, lastname, email, message)";
+$q .= "VALUES ('$name', '$lastname', '$email', '$message_1')";
     if (mysqli_query($conn, $q))
     mysqli_close($conn);
    
